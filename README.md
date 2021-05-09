@@ -8,9 +8,9 @@
 ### Listando e removendo diretórios para refazer o projeto
 
 #### ✔️ Mostrando o diretótio corrente:
-    app_dockerluciolemos@dev:~$ pwd
+    luciolemos@dev:~$ pwd
     /home/luciolemos
-#### ✔️ Listando arquivos/diretórios:
+#### ✔️ Listando arquivos/diretórios em `luciolemos`:
     luciolemos@dev:~$ ls -l
     total 16
     drwxr-xr-x 2 luciolemos luciolemos 4096 Apr  6 20:24 my_documents
@@ -31,7 +31,7 @@
     luciolemos@dev:~/my_projects/docker_projects$ ls -l
     total 4
     drwxr-xr-x 6 luciolemos luciolemos 4096 May  8 09:23 getting-started
-#### ✔️ Removendo `rm` o diretório `getting-started`: 
+#### ✔️ Removendo com  `rm` o diretório `getting-started`: 
     luciolemos@dev:~/my_projects/docker_projects$ sudo rm -r getting-started
     [sudo] password for luciolemos:
 #### ✔️ Listando novamente arquivos/diretórios em `docker_projects`:
@@ -75,6 +75,15 @@
 #### ✔️ Listando novamente as imagens:
     luciolemos@dev:~/my_projects/docker_projects$ docker images
     REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+#### ✔️ Removendo imagens e containers com `docker system prune -a`:
+    luciolemos@dev:~$ docker system prune -a
+    WARNING! This will remove:
+    - all stopped containers
+    - all networks not used by at least one container
+    - all images without at least one container associated to them
+    - all build cache
+
+    Are you sure you want to continue? [y/N] y
 ## 4ª Parte
 ### Clonando o projeto
 #### ✔️ Clonando o projeto de exemplo do repositório remoto com `git clone`:
