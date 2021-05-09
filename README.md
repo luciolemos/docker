@@ -161,8 +161,8 @@ O "."  no final do comando  `docker build`, informa que o Docker deve procurar o
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker build -t getting-started  .
 #### ✔️ Inicie o  contêiner usando o comando `docker run` referenciado a imagem  `getting-started`, criada no passo anterior:
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker run -dp 3000:3000 getting-started
-
-     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker run -dp 3000:3000 getting-started
+#### ✔️
+    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker run -dp 3000:3000 getting-started
     38ab9af111173d2ed7622e805da83526c5e576e8850859e54530e54a674d2d8f
     
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker ps
