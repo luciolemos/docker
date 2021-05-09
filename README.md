@@ -159,7 +159,7 @@
 O "."  no final do comando  `docker build`, informa que o Docker deve procurar o arquivo `Dockerfile` no diretório atual.
 
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker build -t getting-started  .
-#### ✔️ Inicie o  contêiner usando o comando `docker run` referenciado a imagem  `getting-started`, criada no passo anterior:
+#### ✔️ Inicie o  contêiner usando o comando `docker run` referenciando a imagem  `getting-started`, criada no passo anterior:
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker run -dp 3000:3000 getting-started
 #### ✔️
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker run -dp 3000:3000 getting-started
