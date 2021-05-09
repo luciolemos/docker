@@ -84,6 +84,19 @@
     - all build cache
 
     Are you sure you want to continue? [y/N] y
+#### ✔️  Listando os containers instalados:
+    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker ps
+    CONTAINER ID   IMAGE          COMMAND                  CREATED             STATUS             PORTS                                       NAMES
+    38ab9af11117   cd7de3b48f41   "docker-entrypoint.s…"   About an hour ago   Up About an hour   0.0.0.0:3000->3000/tcp, :::3000->3000/tcp   gallant_meninsky
+#### ✔️ Parando um container em execução:
+    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker stop 38ab9af11117
+    38ab9af11117
+#### ✔️ Listando os containers
+    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker ps
+    CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+
+
 ## 4ª Parte
 ### Clonando o projeto
 #### ✔️ Clonando o projeto de exemplo do repositório remoto com `git clone`:
@@ -175,3 +188,7 @@ O "."  no final do comando  `docker build`, informa que o Docker deve procurar o
     node              12-alpine   deeae3752431   3 weeks ago   88.9MB
     
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$
+#### Se houver um container em execução você verá a seguinte mensagem:
+    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker run -dp 3000:3000 getting-started
+    f4d0b2712feeb006917cd33b26d8f46b1f94452b4adcece15b04b9f06ef87b08
+    docker: Error response from daemon: driver failed programming external connectivity on endpoint dreamy_elion (03345e8c6a3ee5048e7ef1e928acffd17d52c252ac179eaa4fc67f5ac7406367): Bind for 0.0.0.0:3000 failed: port is already allocated.
