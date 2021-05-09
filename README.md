@@ -161,3 +161,17 @@ O "."  no final do comando  `docker build`, informa que o Docker deve procurar o
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker build -t getting-started  .
 #### ✔️ Inicie o  contêiner usando o comando `docker run` referenciado a imagem  `getting-started`, criada no passo anterior:
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker run -dp 3000:3000 getting-started
+
+     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker run -dp 3000:3000 getting-started
+    38ab9af111173d2ed7622e805da83526c5e576e8850859e54530e54a674d2d8f
+    
+    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker ps
+    CONTAINER ID   IMAGE             COMMAND                  CREATED          STATUS          PORTS                                       NAMES
+    38ab9af11117   getting-started   "docker-entrypoint.s…"   21 minutes ago   Up 21 minutes   0.0.0.0:3000->3000/tcp, :::3000->3000/tcp   gallant_meninsky
+    l
+    uciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker images
+    REPOSITORY        TAG         IMAGE ID       CREATED       SIZE
+    getting-started   latest      cd7de3b48f41   7 hours ago   385MB
+    node              12-alpine   deeae3752431   3 weeks ago   88.9MB
+    
+    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$
