@@ -134,7 +134,7 @@
     drwxr-xr-x 4 luciolemos luciolemos   4096 May  9 09:45 spec
     drwxr-xr-x 5 luciolemos luciolemos   4096 May  9 09:45 src
     -rw-r--r-- 1 luciolemos luciolemos 179361 May  9 09:45 yarn.lock
- #### ✔️ Criando o arquivo README.md, adicionando README.me ao aruivo de índices, Inicializando, adicionando, commitando e pushando com git:
+ #### ✔️ Criando o arquivo `README.md`, adicionando `README.md` ao arquivo de índices, inicializando, adicionando, commitando e pushando com git:
     echo "# docker" >> README.md
     git init
     git add README.md
