@@ -155,7 +155,7 @@
     CMD ["node", "src/index.js"]
 
 #### ✔️ Criando a imagem. Este comando usa o Dockerfile para construir uma nova imagem de contêiner.
-O "." no final docomando  docker build, informa que o Docker deve procurar Dockerfile no diretório atual.
+O "." no final docomando  docker build, informa que o Docker deve procurar o arquivo `Dockerfile` no diretório atual.
 
 
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker build -t getting-started  .
