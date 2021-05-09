@@ -142,5 +142,5 @@
     git branch -M main
     git remote add origin https://github.com/luciolemos/docker.git
     git push -u origin main
-#### ✔️ Abrindo com o VSCode:
+#### ✔️ Abrindo o projeto `app` com o VSCode:
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ code .
