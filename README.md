@@ -144,7 +144,8 @@
     git push -u origin main
 #### ✔️ Abrindo o projeto `app` com o VSCode:
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ code .
-
+## 5ª Parte
+### Configurando o `Dockerfile`, criando imagem, criando o container, 
 #### ✔️ Acrescente ao arquivo `Dockerfile` o seguinte bloco de código:
     # syntax=docker/dockerfile:1
     FROM node:12-alpine
@@ -155,7 +156,8 @@
     CMD ["node", "src/index.js"]
 
 #### ✔️ Criando a imagem. Este comando usa o Dockerfile para construir uma nova imagem de contêiner.
-O "."  no final do comando  docker build, informa que o Docker deve procurar o arquivo `Dockerfile` no diretório atual.
-
+O "."  no final do comando  `docker build`, informa que o Docker deve procurar o arquivo `Dockerfile` no diretório atual.
 
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker build -t getting-started  .
+#### ✔️ Inicie o  contêiner usando o comando `docker run` referenciado a imagem  `getting-started`, criada no passo anterior:
+    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker run -dp 3000:3000 getting-started
