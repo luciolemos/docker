@@ -115,5 +115,23 @@
     drwxr-xr-x 4 luciolemos luciolemos   4096 May  9 05:53 spec
     drwxr-xr-x 5 luciolemos luciolemos   4096 May  9 05:53 src
     -rw-r--r-- 1 luciolemos luciolemos 179361 May  9 05:53 yarn.lock
-#### ✔️
-    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$
+#### ✔️ Criando na raís do projeto o arquivo `Dockerfile`:
+    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ touch Dockerfile
+#### ✔️ Listando novamente arquivos/diretórios, veremos que foi criado na raís do projeto, o arquivo `Dockerfile`:
+    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ ls -l
+    total 188
+    -rw-r--r-- 1 luciolemos luciolemos      0 May  9 09:46 Dockerfile
+    -rw-r--r-- 1 luciolemos luciolemos    626 May  9 09:45 package.json
+    drwxr-xr-x 4 luciolemos luciolemos   4096 May  9 09:45 spec
+    drwxr-xr-x 5 luciolemos luciolemos   4096 May  9 09:45 src
+    -rw-r--r-- 1 luciolemos luciolemos 179361 May  9 09:45 yarn.lock
+ #### ✔️ Criando o arquivo README.md, adicionando README.me ao aruivo de índices, Inicializando, adicionando, commitando e pushando com git:
+    echo "# docker" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git branch -M main
+    git remote add origin https://github.com/luciolemos/docker.git
+    git push -u origin main
+#### ✔️ Abrindo com o VSCode:
+    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ code .
