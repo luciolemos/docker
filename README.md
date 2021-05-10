@@ -89,7 +89,7 @@
     Are you sure you want to continue? [y/N] y
 ## 4ª Parte
 ### Clonando o projeto
-#### ✔️ Clonando o projeto de exemplo do repositório remoto com `git clone`:
+#### ✔️ Clonando o projeto de exemplo do repositório remoto com `$ git clone <URL>`:
     luciolemos@dev:~/my_projects/docker_projects$ git clone https://github.com/docker/getting-started.git
     Cloning into 'getting-started'...
     remote: Enumerating objects: 479, done.
