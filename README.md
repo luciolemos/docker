@@ -30,7 +30,7 @@
     luciolemos@dev:~/my_projects/docker_projects$ ls -l
     total 4
     drwxr-xr-x 6 luciolemos luciolemos 4096 May  8 09:23 getting-started
-#### ✔️ Removendo com  `rm` o diretório `getting-started`: 
+#### ✔️ Removendo com  `$ rm` o diretório `getting-started`: 
     luciolemos@dev:~/my_projects/docker_projects$ sudo rm -r getting-started
     [sudo] password for luciolemos:
 #### ✔️ Listando novamente arquivos/diretórios em `docker_projects`:
