@@ -43,7 +43,7 @@
      [ - ]  apparmor
      [ - ]  docker
      [ ? ]  hwclock.sh
-#### ✔️ Startando o serviço `docker`:
+#### ✔️ Startando o serviço `docker` com `$ sudo service docker start`:
     luciolemos@dev:~/my_projects/docker_projects$ sudo service docker start
      * Starting Docker: docker [ OK ]
 #### ✔️ Verificando se o serviço `docker` foi corretamente iniciado: 
