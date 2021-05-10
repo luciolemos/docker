@@ -179,3 +179,30 @@ O "."  no final do comando  `docker build`, informa que o Docker deve procurar o
     docker: Error response from daemon: driver failed programming external connectivity on endpoint dreamy_elion (03345e8c6a3ee5048e7ef1e928acffd17d52c252ac179eaa4fc67f5ac7406367): Bind for 0.0.0.0:3000 failed: port is already allocated.
 #### ✔️ Atualize o navegador: http://localhost:3000
 
+## 6º Passo
+#### Logando no docker via terminal
+     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker login -u luciolemos
+    Password: Diferent@1968
+    Login Succeeded
+#### Realizando o push da imagem 
+    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker push luciolemos/app
+    Using default tag: latest
+    The push refers to repository [docker.io/luciolemos/app]
+    An image does not exist locally with the tag: luciolemos/app
+#### Renomeie a imagem local para `luciolemos/app`.
+    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker tag app luciolemos/app
+### Execute novamente o push da imagem
+    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker push luciolemos/app
+    Using default tag: latest
+    The push refers to repository [docker.io/luciolemos/app]
+    64083c9fc6fb: Pushed 
+    11d1b3c527c5: Pushed 
+    b33a09848dc5: Pushed 
+    679a91a094bb: Pushed 
+    c29549fbad68: Mounted from library/node 
+    efc48a5f6f42: Mounted from library/node 
+    33816ea3af7a: Mounted from library/node 
+    9a5d14f9f550: Mounted from library/node 
+    latest: digest: sha256:ad1468f274c3a055e067b2aafb7727e4f694f5efc8ee222e1199d61a7867a1cf size: 2000
+   
+    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ 
