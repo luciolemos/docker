@@ -16,7 +16,7 @@
     drwxr-xr-x 2 luciolemos luciolemos 4096 May  8 08:59 my_downloads
     drwxr-xr-x 2 luciolemos luciolemos 4096 Apr  6 20:26 my_exemples
     drwxr-xr-x 3 luciolemos luciolemos 4096 May  2 09:53 my_projects
-#### ✔️ Navegando para a raís de `my_projects` com change diretory `cd`:
+#### ✔️ Navegando para a raís de `my_projects` com change diretory `$ cd`:
     luciolemos@dev:~$ cd my_projects
     luciolemos@dev:~/my_projects$
 #### ✔️ Listando arquivos/diretórios existentes em `my_projects`:
