@@ -6,18 +6,17 @@
 [![Youtube Badge](https://img.shields.io/badge/-YouTube-ff0000?style=flat-square&labelColor=ff0000&logo=youtube&logoColor=white&link=https://studio.youtube.com/channel/UCrNM1nr2nw0lSqMD10m6rLw)](#)
 ## 1ª Parte
 ### Listando e removendo diretórios para refazer o projeto
-
-#### ✔️ Mostrando o diretótio corrente:
+#### ✔️ Mostrando o diretótio corrente com o comando `$ pwd`:
     luciolemos@dev:~$ pwd
     /home/luciolemos
-#### ✔️ Listando arquivos/diretórios em `luciolemos`:
+#### ✔️ Listando arquivos/diretórios em `luciolemos` com o comando `$ ls -l`:
     luciolemos@dev:~$ ls -l
     total 16
     drwxr-xr-x 2 luciolemos luciolemos 4096 Apr  6 20:24 my_documents
     drwxr-xr-x 2 luciolemos luciolemos 4096 May  8 08:59 my_downloads
     drwxr-xr-x 2 luciolemos luciolemos 4096 Apr  6 20:26 my_exemples
     drwxr-xr-x 3 luciolemos luciolemos 4096 May  2 09:53 my_projects
-#### ✔️ Navegando para a raís de `my_projects`:
+#### ✔️ Navegando para a raís de `my_projects` com change diretory `cd`:
     luciolemos@dev:~$ cd my_projects
     luciolemos@dev:~/my_projects$
 #### ✔️ Listando arquivos/diretórios existentes em `my_projects`:
@@ -56,8 +55,9 @@
 ### Listando e removendo imagens e container existentes para refazer o projeto
 #### ✔️ Listando as ` docker images` instaladas: 
     luciolemos@dev:~/my_projects/docker_projects$ docker images
-    REPOSITORY        TAG           IMAGE ID             CREATED       SIZE
-    getting-started  latest        0f375ca4f10e       5 hours ago     383MB
+    REPOSITORY   TAG         IMAGE ID       CREATED       SIZE
+    app          latest      d83c85ff1a5a   3 hours ago   386MB
+    node         12-alpine   deeae3752431   3 weeks ago   88.9MB
 #### ✔️ Listando os containers instalados:
     luciolemos@dev:~/my_projects/docker_projects$ docker ps -a
     CONTAINER ID        IMAGE                  COMMAND                    CREATED              STATUS           PORTS                NAMES
@@ -182,3 +182,6 @@ O "."  no final do comando  `docker build`, informa que o Docker deve procurar o
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker run -dp 3000:3000 getting-started
     f4d0b2712feeb006917cd33b26d8f46b1f94452b4adcece15b04b9f06ef87b08
     docker: Error response from daemon: driver failed programming external connectivity on endpoint dreamy_elion (03345e8c6a3ee5048e7ef1e928acffd17d52c252ac179eaa4fc67f5ac7406367): Bind for 0.0.0.0:3000 failed: port is already allocated.
+
+#### ✔️ Atualize o navegador em `http: // localhost: 3000` .
+
