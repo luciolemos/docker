@@ -60,7 +60,7 @@
     getting-started  latest        0f375ca4f10e       5 hours ago     383MB
 #### ✔️ Listando os containers instalados:
     luciolemos@dev:~/my_projects/docker_projects$ docker ps -a
-    CONTAINER ID        IMAGE                  COMMAND                    CREATED              STATUS                       PORTS                NAMES
+    CONTAINER ID        IMAGE                  COMMAND                    CREATED              STATUS           PORTS                NAMES
     78c4bac8bd1f    getting-started     "docker-entrypoint.s…"   About a minute ago   Up About a minute   0.0.0.0:3000->3000/tcp   sharp_rhodes
 #### ✔️ Parando um container em execução, com `docker stop`, antes de removê-lo:
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker stop 78c4bac8bd1f 
