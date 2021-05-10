@@ -68,7 +68,7 @@
 #### ✔️ Removendo o container de `ID 3f3ff603e9d0` com a CLI `$ docker rm <CONTAINER ID>`:
     luciolemos@dev:~/my_projects/docker_projects$ docker rm 3f3ff603e9d0
     3f3ff603e9d0
-#### ✔️ Removendo a imagem `ID d83c85ff1a5a`:
+#### ✔️ Removendo a imagem `ID d83c85ff1a5a` com a CLI `$ docker rmi <IMAGE ID>`::
     luciolemos@dev:~/my_projects/docker_projects$ docker rmi d83c85ff1a5a
     Untagged: getting-started:latest
     Deleted: sha256:0f375ca4f10ed3dc43a24ff05f3f8df1a421b991d2dbb226c79f6e9715a7d612
