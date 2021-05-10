@@ -38,7 +38,7 @@
     total 0
 ## 2ª Parte
 ### Listando os serviços em execução e "startando" o docker:
-#### ✔️ Verificando o status dos serviços com `service --status-all`:
+#### ✔️ Verificando o status dos serviços com `$ service --status-all`:
     luciolemos@dev:~/my_projects/docker_projects$ service --status-all
      [ - ]  apparmor
      [ - ]  docker
