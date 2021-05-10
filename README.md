@@ -24,7 +24,7 @@
     luciolemos@dev:~/my_projects$ ls -l
     total 4
     drwxr-xr-x 3 luciolemos luciolemos 4096 May  8 09:23 docker_projects
-#### ✔️ Navegando para a raís de `my_docker_projects`:
+#### ✔️ Navegando para a raís de `docker_projects`:
     luciolemos@dev:~/my_projects$ cd docker_projects
     luciolemos@dev:~/my_projects/docker_projects$
 #### ✔️ Listando arquivos/diretórios em `my_docker_projects`:
