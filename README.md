@@ -57,7 +57,7 @@
 #### ✔️ Listando as ` docker images` instaladas: 
     luciolemos@dev:~/my_projects/docker_projects$ docker images
     REPOSITORY        TAG           IMAGE ID             CREATED       SIZE
-    getting-started    latest     0f375ca4f10e           5 hours ago     383MB
+    getting-started    latest     0f375ca4f10e       5 hours ago     383MB
 #### ✔️ Listando os containers instalados:
     luciolemos@dev:~/my_projects/docker_projects$ docker ps -a
     CONTAINER ID        IMAGE                  COMMAND                    CREATED              STATUS                       PORTS                NAMES
