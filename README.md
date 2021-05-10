@@ -62,6 +62,9 @@
     luciolemos@dev:~/my_projects/docker_projects$ docker ps -a
     CONTAINER ID   IMAGE             COMMAND                  CREATED       STATUS                       PORTS                    NAMES
     78c4bac8bd1f   getting-started   "docker-entrypoint.s…"   4 hours ago   Exited (255) 2 minutes ago   0.0.0.0:3000->3000/tcp   sharp_rhodes
+#### ✔️ Parando um container em execução, com `docker stop`, antes de removê-lo:
+    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker stop 78c4bac8bd1f 
+    78c4bac8bd1f 
 #### ✔️ Removendo o container de `ID 78c4bac8bd1f`:
     luciolemos@dev:~/my_projects/docker_projects$ docker rm 78c4bac8bd1f
     78c4bac8bd1f
@@ -84,19 +87,6 @@
     - all build cache
 
     Are you sure you want to continue? [y/N] y
-#### ✔️  Listando os containers instalados:
-    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker ps
-    CONTAINER ID   IMAGE          COMMAND                  CREATED             STATUS             PORTS                                       NAMES
-    38ab9af11117   cd7de3b48f41   "docker-entrypoint.s…"   About an hour ago   Up About an hour   0.0.0.0:3000->3000/tcp, :::3000->3000/tcp   gallant_meninsky
-#### ✔️ Parando um container em execução:
-    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker stop 38ab9af11117
-    38ab9af11117
-#### ✔️ Listando os containers
-    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker ps
-    CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
-
-
-
 ## 4ª Parte
 ### Clonando o projeto
 #### ✔️ Clonando o projeto de exemplo do repositório remoto com `git clone`:
