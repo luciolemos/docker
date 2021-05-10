@@ -60,16 +60,16 @@
     node         12-alpine   deeae3752431   3 weeks ago   88.9MB
 #### ✔️ Listando os containers instalados:
     luciolemos@dev:~/my_projects/docker_projects$ docker ps -a
-    CONTAINER ID        IMAGE                  COMMAND                    CREATED              STATUS           PORTS                NAMES
-    78c4bac8bd1f    getting-started     "docker-entrypoint.s…"   About a minute ago   Up About a minute   0.0.0.0:3000->3000/tcp   sharp_rhodes
+    CONTAINER ID   IMAGE     COMMAND                  CREATED       STATUS       PORTS                                       NAMES
+    3f3ff603e9d0   app       "docker-entrypoint.s…"   3 hours ago   Up 3 hours   0.0.0.0:3000->3000/tcp, :::3000->3000/tcp   epic_joliot
 #### ✔️ Parando um container em execução, com `docker stop`, antes de removê-lo:
-    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker stop 78c4bac8bd1f 
-    78c4bac8bd1f 
-#### ✔️ Removendo o container de `ID 78c4bac8bd1f`:
-    luciolemos@dev:~/my_projects/docker_projects$ docker rm 78c4bac8bd1f
-    78c4bac8bd1f
-#### ✔️ Removendo a imagem `ID 0f375ca4f10e`:
-    luciolemos@dev:~/my_projects/docker_projects$ docker rmi 0f375ca4f10e
+    luciolemos@dev:~/my_projects/docker_projects$ docker stop 3f3ff603e9d0 
+    3f3ff603e9d0 
+#### ✔️ Removendo o container de `ID 3f3ff603e9d0`:
+    luciolemos@dev:~/my_projects/docker_projects$ docker rm 3f3ff603e9d0
+    3f3ff603e9d0
+#### ✔️ Removendo a imagem `ID d83c85ff1a5a`:
+    luciolemos@dev:~/my_projects/docker_projects$ docker rmi d83c85ff1a5a
     Untagged: getting-started:latest
     Deleted: sha256:0f375ca4f10ed3dc43a24ff05f3f8df1a421b991d2dbb226c79f6e9715a7d612
 #### ✔️ Listando novamente os containers:  
