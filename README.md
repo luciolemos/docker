@@ -78,7 +78,7 @@
 #### ✔️ Listando novamente as imagens:
     luciolemos@dev:~/my_projects/docker_projects$ docker images
     REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
-#### ✔️ Removendo imagens e containers com `docker system prune -a`:
+#### ✔️ Removendo imagens e containers com `$ docker system prune -a`:
     luciolemos@dev:~$ docker system prune -a
     WARNING! This will remove:
     - all stopped containers
