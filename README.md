@@ -148,7 +148,7 @@
 #### ✔️ Abrindo o projeto `app` com o VSCode:
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ code .
 ## 5ª Parte
-### Configurando o `Dockerfile`, criando imagem, criando o container, ...
+### Configurando o `Dockerfile`, criando a imagem, criando o container, ...
 #### ✔️ Acrescente ao arquivo `Dockerfile` o seguinte bloco de código:
     # syntax=docker/dockerfile:1
     FROM node:12-alpine
@@ -161,27 +161,21 @@
 #### ✔️ Criando a imagem. Este comando usa o Dockerfile para construir uma nova imagem de contêiner.
 O "."  no final do comando  `docker build`, informa que o Docker deve procurar o arquivo `Dockerfile` no diretório atual.
 
-    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker build -t getting-started  .
-#### ✔️ Inicie o  contêiner usando o comando `docker run` referenciando a imagem  `getting-started`, criada no passo anterior:
-    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker run -dp 3000:3000 getting-started
-#### ✔️
-    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker run -dp 3000:3000 getting-started
+    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker build -t app  .
+#### ✔️ Inicie o  contêiner usando o comando `docker run` referenciando a imagem  `app`, criada no passo anterior:
+    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker run -dp 3000:3000 app
     38ab9af111173d2ed7622e805da83526c5e576e8850859e54530e54a674d2d8f
-#### ✔️    
-    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker ps
-    CONTAINER ID   IMAGE             COMMAND                  CREATED          STATUS          PORTS                                       NAMES
-    38ab9af11117   getting-started   "docker-entrypoint.s…"   21 minutes ago   Up 21 minutes   0.0.0.0:3000->3000/tcp, :::3000->3000/tcp   gallant_meninsky
-#### ✔️
+#### ✔️ Listando os containers    
+    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker ps -a
+    CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS                    NAMES
+    aee7d3183e6c   app       "docker-entrypoint.s…"   3 minutes ago   Up 3 minutes   0.0.0.0:3000->3000/tcp   cool_albattani
+#### ✔️ Listando as imagens
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker images
-    REPOSITORY        TAG         IMAGE ID       CREATED       SIZE
-    getting-started   latest      cd7de3b48f41   7 hours ago   385MB
-    node              12-alpine   deeae3752431   3 weeks ago   88.9MB
-#### ✔️   
-    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$
+    REPOSITORY   TAG       IMAGE ID       CREATED              SIZE
+    app          latest    268cc5123b5a   About a minute ago   386MB
 #### ✔️ Se houver um container em execução você verá a seguinte mensagem de erro:
-    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker run -dp 3000:3000 getting-started
+    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker run -dp 3000:3000 app
     f4d0b2712feeb006917cd33b26d8f46b1f94452b4adcece15b04b9f06ef87b08
     docker: Error response from daemon: driver failed programming external connectivity on endpoint dreamy_elion (03345e8c6a3ee5048e7ef1e928acffd17d52c252ac179eaa4fc67f5ac7406367): Bind for 0.0.0.0:3000 failed: port is already allocated.
-
 #### ✔️ Atualize o navegador: http://localhost:3000
 
