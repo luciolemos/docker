@@ -183,5 +183,5 @@ O "."  no final do comando  `docker build`, informa que o Docker deve procurar o
     f4d0b2712feeb006917cd33b26d8f46b1f94452b4adcece15b04b9f06ef87b08
     docker: Error response from daemon: driver failed programming external connectivity on endpoint dreamy_elion (03345e8c6a3ee5048e7ef1e928acffd17d52c252ac179eaa4fc67f5ac7406367): Bind for 0.0.0.0:3000 failed: port is already allocated.
 
-#### ✔️ Atualize o navegador  http://localhost:3000/.
+#### ✔️ Atualize o navegador: http://localhost:3000/
 
