@@ -53,19 +53,19 @@
      [ ? ]  hwclock.sh
 ## 3ª Parte
 ### Listando e removendo imagens e container existentes para refazer o projeto
-#### ✔️ Listando as ` docker images` instaladas: 
+#### ✔️ Listando as ` docker images` instaladas com `$ docker images`: 
     luciolemos@dev:~/my_projects/docker_projects$ docker images
     REPOSITORY   TAG         IMAGE ID       CREATED       SIZE
     app          latest      d83c85ff1a5a   3 hours ago   386MB
     node         12-alpine   deeae3752431   3 weeks ago   88.9MB
-#### ✔️ Listando os containers instalados:
+#### ✔️ Listando todos os containers instalados com `$ docker ps -a`:
     luciolemos@dev:~/my_projects/docker_projects$ docker ps -a
     CONTAINER ID   IMAGE     COMMAND                  CREATED       STATUS       PORTS                                       NAMES
     3f3ff603e9d0   app       "docker-entrypoint.s…"   3 hours ago   Up 3 hours   0.0.0.0:3000->3000/tcp, :::3000->3000/tcp   epic_joliot
-#### ✔️ Parando um container em execução, com `docker stop`, antes de removê-lo:
+#### ✔️ Parando um container em execução, com `$ docker stop <CONTAINER ID>`, antes de removê-lo:
     luciolemos@dev:~/my_projects/docker_projects$ docker stop 3f3ff603e9d0 
     3f3ff603e9d0 
-#### ✔️ Removendo o container de `ID 3f3ff603e9d0`:
+#### ✔️ Removendo o container de `ID 3f3ff603e9d0` com a CLI `$ docker rm <CONTAINER ID>`:
     luciolemos@dev:~/my_projects/docker_projects$ docker rm 3f3ff603e9d0
     3f3ff603e9d0
 #### ✔️ Removendo a imagem `ID d83c85ff1a5a`:
