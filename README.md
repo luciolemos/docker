@@ -148,7 +148,7 @@
 #### ✔️ Abrindo o projeto `app` com o VSCode:
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ code .
 ## 5ª Parte
-### Configurando o `Dockerfile`, criando imagem, criando o container, 
+### Configurando o `Dockerfile`, criando imagem, criando o container, ...
 #### ✔️ Acrescente ao arquivo `Dockerfile` o seguinte bloco de código:
     # syntax=docker/dockerfile:1
     FROM node:12-alpine
