@@ -184,12 +184,18 @@ O "."  no final do comando  `docker build`, informa que o Docker deve procurar o
      luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker login -u luciolemos
     Password: Diferent@1968
     Login Succeeded
-#### Realizando o push da imagem 
+#### Realizando o push da imagem. 
+Repare que a última linha do bloco de código abixo nos informa que a imagem `app` não existe em nosso repositório local. 
+
+
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker push luciolemos/app
     Using default tag: latest
     The push refers to repository [docker.io/luciolemos/app]
     An image does not exist locally with the tag: luciolemos/app
 #### Renomeie a imagem local para `luciolemos/app`.
+O comando a seguir `$ docker tag app luciolemos/app`,  renomeia a imagem no repositório  local de `app` para `luciolemos/app`.
+
+
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker tag app luciolemos/app
 ### Execute novamente o push da imagem
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker push luciolemos/app
