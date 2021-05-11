@@ -7,7 +7,7 @@
 ## 1ª Parte
 ### Listando e removendo diretórios para refazer o projeto
 #### ✔️ Mostrando o diretótio corrente com o comando `$ pwd`:
-    luciolemos@dev:~$ pwd
+luciolemos@dev:~$ pwd
     /home/luciolemos
 #### ✔️ Listando arquivos/diretórios em `luciolemos` com o comando `$ ls -l`:
     luciolemos@dev:~$ ls -l
@@ -181,7 +181,7 @@ O "."  no final do comando  `docker build`, informa que o Docker deve procurar o
 
 ## 6º Passo
 #### Logando no docker via terminal
-     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker login -u luciolemos
+    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker login -u luciolemos
     Password: Diferent@1968
     Login Succeeded
 #### Realizando o push da imagem. 
