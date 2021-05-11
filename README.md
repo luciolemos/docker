@@ -7,10 +7,7 @@
 ## 1ª Parte
 ### Listando e removendo diretórios para refazer o projeto
 #### ✔️ Mostrando o diretótio corrente com o comando `$ pwd`:
-luciolemos@dev:~$
-
-
-    pwd
+`luciolemos@dev:~$`    pwd
     
 #### ✔️ Listando arquivos/diretórios em `luciolemos` com o comando `$ ls -l`:
     luciolemos@dev:~$ ls -l
