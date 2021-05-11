@@ -182,7 +182,7 @@ O "."  no final do comando  `docker build`, informa que o Docker deve procurar o
 #### ✔️ Atualize o navegador: http://localhost:3000
 
 ## Parte - VI
-### Logando, renomeando a imagem " pusheando a imagem:
+### Logando, renomeando a imagem , enviando imagem para registro:
 #### ✔️ Logando no docker via terminal
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker login -u luciolemos
     Password: Diferent@1968
