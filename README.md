@@ -54,10 +54,9 @@
 ## 3ª Parte
 ### Listando e removendo imagens e container existentes para refazer o projeto
 #### ✔️ Listando as ` docker images` instaladas com `$ docker images`: 
-    luciolemos@dev:~/my_projects/docker_projects$ docker images
-    REPOSITORY   TAG         IMAGE ID       CREATED       SIZE
-    app          latest      d83c85ff1a5a   3 hours ago   386MB
-    node         12-alpine   deeae3752431   3 weeks ago   88.9MB
+    luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker images
+    REPOSITORY   TAG       IMAGE ID       CREATED              SIZE
+    app          latest    268cc5123b5a   About a minute ago   386MB
 #### ✔️ Listando todos os containers instalados com `$ docker ps -a`:
     luciolemos@dev:~/my_projects/docker_projects$ docker ps -a
     CONTAINER ID   IMAGE     COMMAND                  CREATED       STATUS       PORTS                                       NAMES
@@ -68,8 +67,8 @@
 #### ✔️ Removendo o container de `ID 3f3ff603e9d0` com a CLI `$ docker rm <CONTAINER ID>`:
     luciolemos@dev:~/my_projects/docker_projects$ docker rm 3f3ff603e9d0
     3f3ff603e9d0
-#### ✔️ Removendo a imagem `ID d83c85ff1a5a` com a CLI `$ docker rmi <IMAGE ID>`::
-    luciolemos@dev:~/my_projects/docker_projects$ docker rmi d83c85ff1a5a
+#### ✔️ Removendo a imagem `ID 268cc5123b5a` com a CLI `$ docker rmi <IMAGE ID>`::
+    luciolemos@dev:~/my_projects/docker_projects$ docker rmi 268cc5123b5a
     Untagged: getting-started:latest
     Deleted: sha256:0f375ca4f10ed3dc43a24ff05f3f8df1a421b991d2dbb226c79f6e9715a7d612
 #### ✔️ Listando novamente os containers:  
@@ -138,6 +137,9 @@
     drwxr-xr-x 5 luciolemos luciolemos   4096 May  9 09:45 src
     -rw-r--r-- 1 luciolemos luciolemos 179361 May  9 09:45 yarn.lock
  #### ✔️ Criando o arquivo `README.md`, adicionando `README.md` ao arquivo de índices, inicializando, adicionando, commitando e pushando com git:
+ O bloco de código a seguir é gerado por ocasião da criação do repositório remoto no github:
+
+ 
     echo "# docker" >> README.md
     git init
     git add README.md
