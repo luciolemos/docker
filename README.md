@@ -4,7 +4,7 @@
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/lucio-lemos-a550441a1/)](https://www.linkedin.com/in/lucio-lemos-a550441a1/)
 [![Twitter Badge](https://img.shields.io/badge/-Twitter-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/lucciolemos)](https://twitter.com/lucciolemos)
 [![Youtube Badge](https://img.shields.io/badge/-YouTube-ff0000?style=flat-square&labelColor=ff0000&logo=youtube&logoColor=white&link=https://studio.youtube.com/channel/UCrNM1nr2nw0lSqMD10m6rLw)](#)
-## 1ª Parte
+## Parte - I
 ### Listando e removendo diretórios para refazer o projeto
 #### ✔️ Mostrando o diretótio corrente com o comando `$ pwd`:
     luciolemos@dev:~$ pwd
@@ -36,7 +36,7 @@
 #### ✔️ Listando novamente arquivos/diretórios em `docker_projects`:
     luciolemos@dev:~/my_projects/docker_projects$ ls -l
     total 0
-## 2ª Parte
+## Parte - II
 ### Listando os serviços em execução e "startando" o docker:
 #### ✔️ Verificando o status dos serviços com `$ service --status-all`:
     luciolemos@dev:~/my_projects/docker_projects$ service --status-all
@@ -51,7 +51,7 @@
      [ - ]  apparmor
      [ + ]  docker
      [ ? ]  hwclock.sh
-## 3ª Parte
+## Parte - III
 ### Listando e removendo imagens e container existentes para refazer o projeto
 #### ✔️ Listando as ` docker images` instaladas com `$ docker images`: 
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker images
@@ -86,7 +86,7 @@
     - all build cache
 
     Are you sure you want to continue? [y/N] y
-## 4ª Parte
+## Parte - IV
 ### Clonando o projeto
 #### ✔️ Clonando o projeto de exemplo do repositório remoto com `$ git clone <URL>`:
     luciolemos@dev:~/my_projects/docker_projects$ git clone https://github.com/docker/getting-started.git
@@ -149,7 +149,7 @@
     git push -u origin main
 #### ✔️ Abrindo o projeto `app` com o VSCode:
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ code .
-## 5ª Parte
+## Parte - V
 ### Configurando o `Dockerfile`, criando a imagem, criando o container, ...
 #### ✔️ Acrescente ao arquivo `Dockerfile` o seguinte bloco de código:
     # syntax=docker/dockerfile:1
@@ -181,7 +181,7 @@ O "."  no final do comando  `docker build`, informa que o Docker deve procurar o
     docker: Error response from daemon: driver failed programming external connectivity on endpoint dreamy_elion (03345e8c6a3ee5048e7ef1e928acffd17d52c252ac179eaa4fc67f5ac7406367): Bind for 0.0.0.0:3000 failed: port is already allocated.
 #### ✔️ Atualize o navegador: http://localhost:3000
 
-## 6º Passo
+## Parte - VI
 ### Logando, renomeando a imagem " pusheando a imagem:
 #### ✔️ Logando no docker via terminal
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker login -u luciolemos
