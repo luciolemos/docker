@@ -5,8 +5,8 @@ body {
 }
 
 .item {
-    background-color: white;
-    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
     margin-bottom: 15px;
     border: transparent;
     border-radius: 5px;
