@@ -36,6 +36,10 @@
 #### ✔️ Removendo com  `$ rm -rf` todo o coteúdo do diretório, inclusive diretórios ocultos: 
     luciolemos@dev:~/my_projects/docker_projects$ sudo rm -rf /home/luciolemos//my_projects/docker_projects/ *
     [sudo] password for luciolemos:   
+##### rm - significa "remove"
+##### -f - significa "force" que é útil quando você não quer ser perguntado/avisado se deseja remover um arquivo, por exemplo.
+##### -r - significa "recursivo", o que significa que você deseja recursivamente descer todas as pastas e remover tudo.
+
 #### ✔️ Listando novamente arquivos/diretórios em `docker_projects`:
     luciolemos@dev:~/my_projects/docker_projects$ ls -l
     total 0
