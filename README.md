@@ -33,7 +33,7 @@
 #### ✔️ Removendo com  `$ rm` o diretório `getting-started`: 
     luciolemos@dev:~/my_projects/docker_projects$ sudo rm -r getting-started
     [sudo] password for luciolemos:
-#### ✔️ Removendo com  `$ rm -rf` o diretório `getting-started`: 
+#### ✔️ Removendo com  `$ rm -rf` todo o coteúdo do diretório, inclusive diretórios ocultos: 
     luciolemos@dev:~/my_projects/docker_projects$ sudo rm -rf /home/luciolemos//my_projects/docker_projects/ *
     [sudo] password for luciolemos:   
 #### ✔️ Listando novamente arquivos/diretórios em `docker_projects`:
