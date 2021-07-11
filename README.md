@@ -61,7 +61,7 @@
     luciolemos@dev:~/my_projects/docker_projects/getting-started/app$ docker images
     REPOSITORY   TAG       IMAGE ID       CREATED              SIZE
     app          latest    268cc5123b5a   About a minute ago   386MB
-### ✔️ Listando todos os containers instalados com `$ docker ps -a`:
+### ✔️ Listando todos os containers instalados, ativos (em execução)ou não, com `$ docker ps -a`:
     luciolemos@dev:~/my_projects/docker_projects$ docker ps -a
     CONTAINER ID   IMAGE     COMMAND                  CREATED       STATUS       PORTS                                       NAMES
     3f3ff603e9d0   app       "docker-entrypoint.s…"   3 hours ago   Up 3 hours   0.0.0.0:3000->3000/tcp, :::3000->3000/tcp   epic_joliot
